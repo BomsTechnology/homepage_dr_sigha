@@ -1,4 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+const NavBar = () => import("@/components/NavBar.vue");
+const Footer = () => import("@/components/Footer.vue");
+const Home = () => import("@/views/front/Home.vue");
 import "vue-router";
 
 declare module "vue-router" {
@@ -13,7 +16,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/views/front/Home.vue"),
+    components: {
+      default: Home,
+      navbar: NavBar,
+      footer: Footer,
+    },
     meta: {
       title: "Médécine Esthétique au Cameroun | " + websiteName,
     },

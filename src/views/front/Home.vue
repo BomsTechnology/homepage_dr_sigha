@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Hero from "@/components/Hero.vue";
+import Service from "@/components/Service.vue";
+</script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <Hero />
+  <Service />
 </template>
