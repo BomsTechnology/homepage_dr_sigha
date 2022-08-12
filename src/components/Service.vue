@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import img1 from "@/assets/bg1.webp";
-import img2 from "@/assets/bg2.jpg";
-import img3 from "@/assets/bg3.jpg";
+import img1 from "@/assets/images/bg1.webp";
+import img2 from "@/assets/images/bg2.jpg";
+import img3 from "@/assets/images/bg3.jpg";
 import { ref } from "vue";
 const items = [img1, img2, img3];
 const img = ref(items[1]);
 </script>
 
 <template>
-  <div class="h-screen bg-gray-50 relative overflow-hidden">
-    <img :src="img" class="w-full h-full object-cover" alt="" />
+  <div
+    class="section h-screen bg-fixed bg-gray-50 relative overflow-hidden bg-cover object-cover"
+    :style="{ 'background-image': `url(${img})` }"
+  >
     <div
       class="bg-black/50 w-full h-full absolute inset-0 flex flex-col items-center lg:pt-20"
     >

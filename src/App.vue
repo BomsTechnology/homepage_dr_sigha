@@ -17,7 +17,7 @@
           leave-to-class="opacity-0 -translate-y-10"
           mode="out-in"
         >
-          <div :key="route.name" class="">
+          <div :key="route.name">
             <component :is="Component" />
           </div>
         </Transition>
