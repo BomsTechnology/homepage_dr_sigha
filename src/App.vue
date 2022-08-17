@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouteRecordName } from "vue-router";
+</script>
 
 <template>
   <main class="flex">
@@ -17,7 +19,7 @@
           leave-to-class="opacity-0 -translate-y-10"
           mode="out-in"
         >
-          <div :key="route.name">
+          <div :key="route.name!">
             <component :is="Component" />
           </div>
         </Transition>
