@@ -4,10 +4,7 @@ import { MailIcon } from "@heroicons/vue/solid";
 <template>
   <div class="w-full flex justify-center items-center lg:space-x-20 py-8">
     <div class="h-96 w-96 lg:block hidden">
-      <img
-        src="@/assets/Thinking face-bro.png"
-        class="w-full h-full object-cover"
-      />
+      <img src="@/assets/question.png" class="w-full h-full object-cover" />
     </div>
     <div class="lg:text-left text-center space-y-8">
       <h1 class="lg:text-5xl text-4xl font-bold">
