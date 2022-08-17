@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div
-    class="section h-screen overflow-hidden md:mt-0 mt-20 md:py-0 py-8 lg:px-20 bg-white w-full flex md:flex-row flex-col justify-center lg:space-x-10 items-center"
+    class="section h-screen overflow-hidden md:py-0 py-8 lg:px-20 bg-white w-full flex md:flex-row flex-col justify-center lg:space-x-10 items-center"
   >
     <div class="">
       <h1 class="lg:text-6xl text-4xl font-bold">

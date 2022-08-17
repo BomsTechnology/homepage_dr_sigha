@@ -2,6 +2,7 @@
 import { MailIcon } from "@heroicons/vue/solid";
 </script>
 <template>
+  <hr class="lg:mx-20 mx-4 border border-gray-100" />
   <footer
     class="flex items-center justify-between lg:flex-row flex-col lg:px-20 bg-white px-4 lg:text-right text-center py-4 text-sm"
   >
